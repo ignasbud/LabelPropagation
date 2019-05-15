@@ -7,7 +7,7 @@ import cv2
 from experiment import Experiment
 from utils import saveCombinedLabelFiles,saveTextFile
 from joblib import Parallel, delayed
-import multiprocessing 
+import multiprocessing
 
 class ExperimentLaunchPropagation(Experiment):
         def appendArguments(self):
@@ -20,11 +20,11 @@ class ExperimentLaunchPropagation(Experiment):
         		cv2.imwrite(new_fname,cv2.resize(cv2.imread(fname),(self.config_info['algorithm_info']['width'],self.config_info['algorithm_info']['height']),interpolation=cv2.INTER_NEAREST))
         def prepareExperimentData(self):
 		if not os.path.isdir(self.config_info["output_directory_info"]["classifier_dir"]):
-			os.system('mkdir '+self.config_info["output_directory_info"]["classifier_dir"])
+			os.mkdir(self.config_info["output_directory_info"]["classifier_dir"])
 		assert os.path.isdir(self.config_info['output_directory_info']['classifier_dir']), 'Classifier directory does not exist! '+self.config_info['output_directory_info']['classifier_dir']
 		self.copyClassifierFiles()
 		if not os.path.isdir(self.config_info['output_directory_info']['propagation_output_dir']):
-			os.system('mkdir '+self.config_info['output_directory_info']['propagation_output_dir'])
+			os.mkdir(self.config_info['output_directory_info']['propagation_output_dir'])
         def prepareExperimentState(self):
                 os.system('cp '+self.args.config_file_name+' ' +self.config_info["output_directory_info"]["project_dir"]+'config_perform_propagation.json')
 
