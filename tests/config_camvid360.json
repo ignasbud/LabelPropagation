@@ -1,0 +1,27 @@
+{
+	"project_name":"project_camvid360",
+        "input_directory_info":{
+                "images_dir":"../data/project_camvid360/images/",
+                "classifier_dir":"../data/project_camvid360/classifier/"
+        },
+        "output_directory_info":{
+                "project_dir":"./outputs/project_camvid360/",
+                "binary_images_dir":"./outputs/project_camvid360/images_binary/",
+		"classifier_dir":"./outputs/project_camvid360/classifier/",
+		"mappings_dir":"./outputs/project_camvid360/mappings/",
+		"propagation_output_dir":"./outputs/project_camvid360/output/"
+        },
+        "code_info":{
+		"script_propagate_one_side":"../scripts/propagate.py",
+		"exec_mappings":"../bin/matching/TitanX/mappings_v40_1024x1024_w_255_h_255_d_3_CORR_16B",
+		"exec_propagation":"../bin/propagation/TitanX/TitanX_propagation_gpu_v9x1_MAX_31"
+        },
+	"algorithm_info":{
+		"propagation_void_color":[255,255,255],
+		"half_patch_size":3,
+		"max_classes":21,
+		"distance":15,
+	        "width":480,
+	        "height":240
+	}
+}
