@@ -1,6 +1,6 @@
 # LabelPropagation
 
-This project provides the implementation of label propagation of Budvytis et. al, **Large scale labelled video data augmentation for semantic segmentation in driving scenarios.** *In ICCV Workshop track, Venice, October 2017*
+This project provides the implementation of label propagation of Budvytis et. al, **Large scale labelled video data augmentation for semantic segmentation in driving scenarios.** *In ICCV Workshop track, Venice, October 2017* [1]
 
 [paper](http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2017-ICCV-label-propagation.pdf)
 <!--- [supplementary]()--->
@@ -14,6 +14,22 @@ Instructions below explain prerequisites and installation steps needed.
 - Python2.7
 - numpy
 - OpenCV3.4.1
+
+### Compatible GPU setups
+
+GPU code compiled with:
+
+```
+{"gpu":"GeForce GTX 1080", "cuda":"8.0",  "driver":"370.28"},
+```
+
+GPU code tested with:
+```
+{"gpu":"Tesla V100-SXM2-16GB", "cuda":"10.1",  "driver":"418.40.04"},
+{"gpu":"GeForce GTX 1080", "cuda":"8.0",  "driver":"370.28"},
+{"gpu":TITAN X (Pascal)","cuda":"10.0","driver":"410.104"},
+{"gpu":TITAN Xp","cuda":"10.0","driver":"410.104"}
+```
 
 <!--- ### Installing
 A step by step series of examples that tell you how to get a development env running
