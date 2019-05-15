@@ -14,7 +14,7 @@
         "code_info":{
 		"script_propagate_one_side":"../scripts/propagate.py",
 		"exec_mappings":"../bin/matching/mappings_v40_GROUP_01_WH_1024x1024_wind_255x255_HP_3",
-		"exec_propagation":"../bin/propagation/TitanX/TitanX_propagation_gpu_v9x1_MAX_31"
+		"exec_propagation":"../bin/propagation/propagation_gpu_v9_GROUP_01_maxclass_31"
         },
 	"algorithm_info":{
 		"propagation_void_color":[255,255,255],
