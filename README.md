@@ -7,7 +7,9 @@ This project provides the implementation of label propagation of Budvytis et. al
 
  <!---[![Label propagation in CityScapes dataset](web/cityscapes_class_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q")--->
  
- ![(web/cityscapes_class_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)
+ ![](web/cityscapes_class_propagation.gif)
+ 
+ [![IMAGE ALT TEXT HERE](web/cityscapes_class_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)
  
 <!---[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/mF5PTV1S9_Q/0.jpg)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)--->
 
