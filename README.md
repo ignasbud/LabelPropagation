@@ -30,6 +30,7 @@ GPU code tested with:
 {"gpu":TITAN X (Pascal)","cuda":"10.0","driver":"410.104"},
 {"gpu":TITAN Xp","cuda":"10.0","driver":"410.104"}
 ```
+See [bin/compilation_info.json](bin/compilation_info.json) for more up-to-date detail.
 
 <!--- ### Installing
 A step by step series of examples that tell you how to get a development env running
