@@ -5,7 +5,7 @@ This project provides the implementation of label propagation of Budvytis et. al
 [paper](http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2017-ICCV-label-propagation.pdf)
 <!--- [supplementary]()--->
 
- [![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+ [![Label propagation in CityScapes dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q")
 <!---[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/mF5PTV1S9_Q/0.jpg)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)--->
 
 ## Getting Started
