@@ -9,6 +9,8 @@ from utils import convertImageToBinaryFile
 
 class ExperimentBinaryImages(Experiment):
 	def prepareExperimentData(self):
+		if not os.path.isdir(self.config_info["output_directory_info"]["outputs_dir"]):
+			os.mkdir(self.config_info["output_directory_info"]["outputs_dir"])
 		if not os.path.isdir(self.config_info["output_directory_info"]["project_dir"]):
 			os.mkdir(self.config_info["output_directory_info"]["project_dir"])
 		if not os.path.isdir(self.config_info["output_directory_info"]["binary_images_dir"]):
