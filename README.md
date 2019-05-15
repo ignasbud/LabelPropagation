@@ -95,6 +95,21 @@ This code is a close, but not an identical replica of the code used in [1]. Expl
 - Add the c++ code of image mapping and label propagation instead of binaries.
 - [TBD]
 
+## Citations
+
+If you use this code please cite the following publications:
+
+@misc{lia_corrales_2015_15991,
+        author       = {Lia Corrales},
+        title        = {{dust: Calculate the intensity of dust scattering halos in the X-ray}},
+        month        = mar,
+        year         = 2015,
+        doi          = {10.5281/zenodo.15991},
+        version      = {1.0},
+        publisher    = {Zenodo},
+        url          = {https://doi.org/10.5281/zenodo.15991}
+        }
+        
 ## References
 
 [1] Budvytis, I., Sauer, P., Roddick, T., Breen, K., Cipolla, R., 
