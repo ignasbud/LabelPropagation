@@ -107,6 +107,16 @@ If you use this code please cite the following publications:
                month = {October},
                year = {2017}
 }
+
+@article{BadrinarayananBC13,
+               author    = {Vijay Badrinarayanan and Ignas Budvytis and Roberto Cipolla},
+               title     = {Semi-Supervised Video Segmentation Using Tree Structured Graphical Models},
+               journal   = {{IEEE} Trans. Pattern Anal. Mach. Intell.},
+               volume    = {35},
+               number    = {11},
+               pages     = {2751--2764},
+               year      = {2013}  
+}
 ```
 
 ## References
