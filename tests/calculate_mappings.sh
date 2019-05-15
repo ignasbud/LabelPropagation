@@ -1,1 +1,4 @@
-python ../scripts/experiment_calculate_mappings.py config_camvid360.json 1
+GPUID=0
+CONFIG='config_camvid360.json'
+
+python ../scripts/experiment_calculate_mappings.py $CONFIG $GPUID
