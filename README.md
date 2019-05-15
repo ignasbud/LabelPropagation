@@ -34,5 +34,4 @@ Explain how to run the automated tests for this system
 ## References
 
 [1] Budvytis, I., Sauer, P., Roddick, T., Breen, K., Cipolla, R., 
-Large scale labelled video data augmentation for semantic segmentation in driving scenarios. [pdf][dataset-available-via-email] 
-In 5th Workshop on Computer Vision for Road Scene Understanding and Autonomous Driving in IEEE International Conference on Computer Vision (ICCV), Venice, October 2017 
+**Large scale labelled video data augmentation for semantic segmentation in driving scenarios.** *In 5th Workshop on Computer Vision for Road Scene Understanding and Autonomous Driving in IEEE International Conference on Computer Vision (ICCV), Venice, October 2017* 
