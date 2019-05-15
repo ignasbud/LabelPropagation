@@ -1,15 +1,25 @@
 import os
+import glob
 import argparse
+from shutil import copyfile
 from experiment import Experiment
+import numpy as np
+import cv2
+from utils import convertImageToBinaryFile
 
 class ExperimentBinaryImages(Experiment):
 	def prepareExperimentData(self):
-		os.system('mkdir '+self.config_info["output_directory_info"]["project_dir"])
-		os.system('mkdir '+self.config_info["output_directory_info"]["binary_images_dir"])
+		if not os.path.isdir(self.config_info["output_directory_info"]["project_dir"]):
+			os.mkdir(self.config_info["output_directory_info"]["project_dir"])
+		if not os.path.isdir(self.config_info["output_directory_info"]["binary_images_dir"]):
+			os.mkdir(self.config_info["output_directory_info"]["binary_images_dir"])
 	def prepareExperimentState(self):
-		os.system('cp '+self.args.config_file_name+' ' +self.config_info["output_directory_info"]["project_dir"]+'config_create_images.json')
+		copyfile(self.args.config_file_name, self.config_info["output_directory_info"]["project_dir"]+'config_create_images.json')
+
 	def executeExperiment(self):
-		os.system('python '+self.config_info["code_info"]['script_create_binary_images']+' '+self.config_info['input_directory_info']['image_dir']+' '+self.config_info['output_directory_info']['binary_images_dir'] + ' '+str(self.config_info['algorithm_info']['width'])+ ' '+str(self.config_info['algorithm_info']['height']))
+		print('Creating binary images')
+		[convertImageToBinaryFile(file_name,self.config_info['output_directory_info']['binary_images_dir']+os.path.splitext(os.path.basename(file_name))[0]+'.bin',self.config_info['algorithm_info']['width'],self.config_info['algorithm_info']['height']) for file_name in sorted(glob.glob(self.config_info['input_directory_info']['images_dir']+'*.png'))]
+		#Parallel(n_jobs=multiprocessing.cpu_count())(delayed(saveCombinedLabelFiles)(file_name+'_LAB.png',[file_name+'_O.png',file_name+'_OR.png'],self.config_info['algorithm_info']['width'],self.config_info['algorithm_info']['height'],self.config_info['algorithm_info']['propagation_void_color'])
 
 if __name__ == "__main__":
 	ExperimentBinaryImages("Create binary images.").run()
