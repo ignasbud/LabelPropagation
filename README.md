@@ -82,7 +82,7 @@ Script executed by **calculate_mappings.sh** takes a folder with binary images (
 python ./scripts/experiment_launch_propagation.py ./configs/config_camvid360.json 0 ./sample_outputs/camvid360/images_binary/R0010094_20170622125256_er_f_00008010.bin
 ```
 
-Script executed by **perform_propagation.sh** takes a seed image name (e.g. ```./sample_outputs/camvid360/images_binary/R0010094_20170622125256_er_f_00008010.bin```) from which to perform a propagation. GPU ID (e.g. ```0```) is also passed in order to execute the code on a desired gpu. Config file (e.g. ```./configs/config_camvid360.json```) stores the "half_propagation_distance" parameter in order to determine the length of the label propagation.
+Script executed by **perform_propagation.sh** takes a seed image name (e.g. ```./sample_outputs/camvid360/images_binary/R0010094_20170622125256_er_f_00008010.bin```) from which to perform a propagation. GPU ID (e.g. ```0```) is also passed in order to execute the code on a desired gpu. Config file (e.g. ```./configs/config_camvid360.json```) stores the ```propagation_half_distance``` (e.g. ```15```) parameter in order to determine the length of the label propagation. The outputs are stored in a dedicated folder (e.g. ```./sample_outputs/camvid360/outputs/```)
 
 ## GPU code
 
