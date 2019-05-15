@@ -13,10 +13,10 @@ You can find more related research [here](http://mi.eng.cam.ac.uk/~ib255/).
  
 <!--[![Class label propagation in CityScapes Dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)-->
 
-Propagation of class labels in CityScapes dataset:
+**Propagation of class labels in CityScapes dataset:**
  <img src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif" data-canonical-src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif" width="100%" />
  
- Propagation of object instance labels in CityScapes dataset:
+**Propagation of object instance labels in CityScapes dataset:**
  <img src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif" data-canonical-src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif" width="100%" />
  
 <!--[![Instance label propagation in CityScapes Dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)-->
