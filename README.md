@@ -1,7 +1,10 @@
 # LabelPropagation
 
-This project provides the implementation of label propagation used in [1]
+This project provides the implementation of label propagation used in Budvytis et. al, Large scale labelled video data augmentation for semantic segmentation in driving scenarios. In ICCV Workshop track, Venice, October 2017 
 
+[paper](http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2017-ICCV-label-propagation.pdf)
+<!--- [supplementary]()--->
+ 
 ## Getting Started
 
 Instructions below explain prerequisites and installation steps needed.
