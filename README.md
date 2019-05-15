@@ -84,6 +84,26 @@ python ./scripts/experiment_launch_propagation.py ./configs/config_camvid360.jso
 
 Script executed by **perform_propagation.sh** takes a seed image name (e.g. ```./sample_outputs/camvid360/images_binary/R0010094_20170622125256_er_f_00008010.bin```) from which to perform a propagation. GPU ID (e.g. ```0```) is also passed in order to execute the code on a desired gpu. Config file (e.g. ```./configs/config_camvid360.json```) stores the "half_propagation_distance" parameter in order to determine the length of the label propagation.
 
+## GPU code
+
+Note that code responsible for actual calculation of correspondences between images and label propagation is pre-compiled with certain parameters for reasons of efficiency and legacy. Some of those parameters are explained below. Also note that currently only pre-compiled binaries are provided (see ```./bin/mappings/``` or ```./bin/propagation/```)
+
+### Calculating correspondences between images
+
+File names (e.g. ```bin/mappings/mappings_v40_GROUP_01_WH_1024x1024_wind_255x255_HP_3```) of code performing image correspondence calculation encode the following information:
+
+- code version (e.g. ```v40```)
+- compilation type/group (e.g. ```GROUP_01```)
+- maximum image dimensions for width and height (e.g. ```WH_1024x1024```)
+- maximum sliding window image dimensions centered around a pixel of interest for width and height (e.g. ```wind_255x255```)
+
+### Propagating labels
+
+File names (e.g. ```bin/propagation/propagation_gpu_v9_GROUP_01_maxclass_31```) of code performing label propagation encode the following information:
+
+- code version (e.g. ```v9```)
+- compilation type/group (e.g. ```GROUP_01```)
+- maximum number of classes per partial propagation (e.g. ```maxclass_31```)
 
 ## Comments on reproducability of [1]
 
