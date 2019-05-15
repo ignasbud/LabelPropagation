@@ -62,12 +62,11 @@ End with an example of getting some data out of the system or using it for a lit
 
 ### Step-1 creating binary images
 
-Script **create_binary_images.sh** takes a folder with png images (e.g. ./data/camvid360/images/) and creates a project folder (e.g. ./sample_outputs/camvid360/), within which it creates raw binary copies of the images read (e.g. ./sample_outputs/camvid360/binary_images/).
+```
+python ./scripts/experiment_create_binary_images.py ./configs/config_camvid360.json
+```
+Script **create_binary_images.sh** takes a folder with png images (e.g. ./data/camvid360/images/) and creates a project folder (e.g. ./sample_outputs/camvid360/), within which it creates raw binary copies of the images read (e.g. ./sample_outputs/camvid360/binary_images/). All data directory and algorithm information is stored in config file (e.g. ./configs/config_camvid360.json)
 
-```
-CONFIG='./configs/config_camvid360.json'
-python ./scripts/experiment_create_binary_images.py $CONFIG
-```
 
 ### Step-2 creating frame to frame mappings
 
