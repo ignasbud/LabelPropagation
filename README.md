@@ -100,16 +100,13 @@ This code is a close, but not an identical replica of the code used in [1]. Expl
 If you use this code please cite the following publications:
 
 ```
-@misc{lia_corrales_2015_15991,
-        author       = {Lia Corrales},
-        title        = {{dust: Calculate the intensity of dust scattering halos in the X-ray}},
-        month        = mar,
-        year         = 2015,
-        doi          = {10.5281/zenodo.15991},
-        version      = {1.0},
-        publisher    = {Zenodo},
-        url          = {https://doi.org/10.5281/zenodo.15991}
-        }
+@InProceedings{Budvytis2017ICCV,
+               author = {Budvytis, I. and Sauer, P. and Roddick, T. and Breen, K. and Cipolla, R.},
+               title = {Large Scale Labelled Video Data Augmentation for Semantic Segmentation in Driving Scenarios},
+               booktitle = {5th Workshop on Computer Vision for Road Scene Understanding and Autonomous Driving in IEEE International Conference on Computer Vision (ICCV)},
+               month = {October},
+               year = {2017}
+}
 ```
 
 ## References
