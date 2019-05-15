@@ -1,5 +1,7 @@
 {
-	"GROUP_01":{	"compiled_with":{"gpu_type":"GeForce GTX 1080","cuda":"8.0","driver":"370.28"},
-			"compatible_with":[{"gpu_type":"Tesla V100-SXM2-16GB", "cuda":"10.1",  "driver":"418.40.04"},
-			 	           {"gpu_type":"GeForce GTX 1080", "cuda":"8.0",  "driver":"370.28"} ]
+	"GROUP_01":{	"compiled_with":{"gpu":"GeForce GTX 1080","cuda":"8.0","driver":"370.28"},
+			"compatible_with":[{"gpu":"Tesla V100-SXM2-16GB", "cuda":"10.1",  "driver":"418.40.04"},
+			 	           {"gpu":"GeForce GTX 1080", "cuda":"8.0",  "driver":"370.28"},
+					   {"gpu":TITAN X (Pascal)","cuda":"10.0","driver":"410.104"},
+ 					   {"gpu":TITAN Xp","cuda":"10.0","driver":"410.104"}, ]
 }
