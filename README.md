@@ -143,3 +143,6 @@ If you use this code please cite the following publications:
 
 [1] Budvytis, I., Sauer, P., Roddick, T., Breen, K., Cipolla, R., 
 **Large scale labelled video data augmentation for semantic segmentation in driving scenarios.** *In 5th Workshop on Computer Vision for Road Scene Understanding and Autonomous Driving in IEEE International Conference on Computer Vision (ICCV), Venice, October 2017* 
+
+[2] Badrinarayanan V., Budvytis, I., Cipolla, R., 
+**Semi-Supervised Video Segmentation using Tree Structured Graphical Models.** *IEEE Transactions on Pattern Analysis and Machine Intelligence, 2013.*
