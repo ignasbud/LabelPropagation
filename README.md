@@ -65,12 +65,26 @@ End with an example of getting some data out of the system or using it for a lit
 ```
 python ./scripts/experiment_create_binary_images.py ./configs/config_camvid360.json
 ```
-Script **create_binary_images.sh** takes a folder with png images (e.g. ./data/camvid360/images/) and creates a project folder (e.g. ./sample_outputs/camvid360/), within which it creates raw binary copies of the images read (e.g. ./sample_outputs/camvid360/binary_images/). All data directory and algorithm information is stored in config file (e.g. ./configs/config_camvid360.json)
+Script executed by **create_binary_images.sh** takes a folder with png images (e.g. ./data/camvid360/images/) and creates a project folder (e.g. ./sample_outputs/camvid360/), within which it creates raw binary copies of the images read (e.g. ./sample_outputs/camvid360/binary_images/). All data directory and algorithm information is stored in config file (e.g. ./configs/config_camvid360.json)
 
 
 ### Step-2 creating frame to frame mappings
 
+```
+python ./scripts/experiment_calculate_mappings.py ./configs/config_camvid360.json 0
+```
+Script executed by **calculate_mappings.sh** takes a folder with binary images (e.g. ./sample_outputs/camvid360/) and calculate forward ("O") and backward ("OR") mappings between neighbouring images. The mappings are stored in a special project folder (e.g. ./sample_outputs/camvid360/mappings/).
+
+
 ### Step-3 performing label propagation
+
+## Comments on reproducability of [1]
+
+## TO-DO List
+
+- aa
+- aa
+- aa
 
 ## References
 
