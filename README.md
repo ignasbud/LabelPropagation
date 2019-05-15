@@ -5,7 +5,12 @@ This project provides the implementation of label propagation of Budvytis et. al
 [paper](http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2017-ICCV-label-propagation.pdf)
 <!--- [supplementary]()--->
 
-[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=mF5PTV1S9_Q)]
+ <iframe width="560" height="315"
+src="https://www.youtube.com/embed/MUQfKFzIOeU" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
 <!---[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/mF5PTV1S9_Q/0.jpg)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)--->
 
 ## Getting Started
