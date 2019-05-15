@@ -40,7 +40,7 @@ class ExperimentCalculateMappings(Experiment):
 
 		if not( file_id%self.args.modulus ==self.args.remainder):
                 	return
-		if(file_id_neighbour<0)and(file_id_neighbour>=len(file_list)):
+		if(file_id_neighbour<0)or(file_id_neighbour>=len(file_list)):
 			return
 
                	mapping_file_name=self.config_info['output_directory_info']['mappings_dir']+os.path.splitext(file_list[file_id])[0]+'_'+mapping_type+'.bin'
