@@ -20,7 +20,7 @@
 		"propagation_void_color":[255,255,255],
 		"half_patch_size":3,
 		"max_classes":21,
-		"distance":15,
+		"propagation_half_distance":15,
 	        "width":480,
 	        "height":240
 	}

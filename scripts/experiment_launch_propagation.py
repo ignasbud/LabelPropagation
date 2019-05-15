@@ -34,9 +34,8 @@ class ExperimentLaunchPropagation(Experiment):
 	def createPropagationInformationFile(self,file_id,map_type,file_list):
 	        result=''
 	        file_lists = []
-	        offset=self.config_info['algorithm_info']['distance']-1
-                for count in range(0,self.config_info['algorithm_info']['distance']*2+1):
-	                        new_fid=file_id-(self.config_info['algorithm_info']['distance']-count-1)+offset
+                for count in range(0,self.config_info['algorithm_info']['propagation_half_distance']*2+1):
+	                        new_fid=file_id-(self.config_info['algorithm_info']['propagation_half_distance']-count-1)+ self.config_info['algorithm_info']['propagation_half_distance']-1
 	                        if (not (new_fid>=0))or (not(new_fid<len(file_list))):
 					continue
 				if(map_type=='O'):
@@ -47,9 +46,9 @@ class ExperimentLaunchPropagation(Experiment):
 					assert False, "Invalid map_type: "+str(map_type)
 				file_lists.append(self.config_info["output_directory_info"]["propagation_output_dir"]+os.path.splitext(file_list[new_fid])[0])
 
-	        list_file_name=self.config_info['output_directory_info']["propagation_output_dir"]+'propagation_info_'+str(self.config_info['algorithm_info']['distance'])+'_'+file_list[file_id].split('.')[0]+'_'+map_type+'.txt'
+	        list_file_name=self.config_info['output_directory_info']["propagation_output_dir"]+'propagation_info_'+str(self.config_info['algorithm_info']['propagation_half_distance'])+'_'+file_list[file_id].split('.')[0]+'_'+map_type+'.txt'
 	        saveTextFile(list_file_name,result)
-        	return list_file_name,file_lists
+        	return list_file_name, file_lists
 	def performPropagation(self,file_id,map_type,file_list):
 	        list_file_name, file_lists = self.createPropagationInformationFile(file_id,map_type,file_list)
 	        assert os.path.isfile(list_file_name), 'File does not exist. '+list_file_name
@@ -57,7 +56,7 @@ class ExperimentLaunchPropagation(Experiment):
 				    self.config_info['code_info']['exec_propagation']+ " " +
 				    list_file_name+ " "+ str(self.args.gpu_id)+" "+
 				    str(self.config_info['algorithm_info']['propagation_void_color']).replace(' ','')+" "+
-				    str(self.config_info['algorithm_info']['max_classes']) +" " + 
+				    str(self.config_info['algorithm_info']['max_classes']) +" " +
 				    str(self.config_info['algorithm_info']['width'])+" " +
 				    str(self.config_info['algorithm_info']['height']))
 	        return file_lists
