@@ -65,7 +65,7 @@ End with an example of getting some data out of the system or using it for a lit
 ```
 python ./scripts/experiment_create_binary_images.py ./configs/config_camvid360.json
 ```
-Script executed by **create_binary_images.sh** takes a folder with png images (e.g. ./data/camvid360/images/) and creates a project folder (e.g. ./sample_outputs/camvid360/), within which it creates raw binary copies of the images read (e.g. ./sample_outputs/camvid360/binary_images/). All data directory and algorithm information is stored in config file (e.g. ./configs/config_camvid360.json)
+Script executed by **create_binary_images.sh** takes a folder with png images (e.g. ./data/camvid360/images/) and creates a project folder (e.g. ```./sample_outputs/camvid360/```), within which it creates raw binary copies of the images read (e.g. ```./sample_outputs/camvid360/binary_images/```). All data directory and algorithm information is stored in config file (e.g. ```./configs/config_camvid360.json```)
 
 
 ### Step-2 creating frame to frame mappings
@@ -73,7 +73,7 @@ Script executed by **create_binary_images.sh** takes a folder with png images (e
 ```
 python ./scripts/experiment_calculate_mappings.py ./configs/config_camvid360.json 0
 ```
-Script executed by **calculate_mappings.sh** takes a folder with binary images (e.g. ./sample_outputs/camvid360/) and calculate forward ("O") and backward ("OR") mappings between neighbouring images. The mappings are stored in a special project folder (e.g. ./sample_outputs/camvid360/mappings/). GPU ID (e.g. 0) is also passed in order to execute the code on a desired gpu.
+Script executed by **calculate_mappings.sh** takes a folder with binary images (e.g. ```./sample_outputs/camvid360/```) and calculate forward ("O") and backward ("OR") mappings between neighbouring images. The mappings are stored in a special project folder (e.g. ```./sample_outputs/camvid360/mappings/```). GPU ID (e.g. ```0```) is also passed in order to execute the code on a desired gpu.
 
 
 ### Step-3 performing label propagation
@@ -82,7 +82,7 @@ Script executed by **calculate_mappings.sh** takes a folder with binary images (
 python ./scripts/experiment_launch_propagation.py ./configs/config_camvid360.json 0 ./sample_outputs/camvid360/images_binary/R0010094_20170622125256_er_f_00008010.bin
 ```
 
-Script executed by **perform_propagation.sh** takes a seed image name (e.g. ```./sample_outputs/camvid360/images_binary/R0010094_20170622125256_er_f_00008010.bin```) from which to perform a propagation. GPU ID (e.g. 0) is also passed in order to execute the code on a desired gpu. Config file (e.g. ./configs/config_camvid360.json) stores the "half_propagation_distance" parameter in order to determine the length of the label propagation.
+Script executed by **perform_propagation.sh** takes a seed image name (e.g. ```./sample_outputs/camvid360/images_binary/R0010094_20170622125256_er_f_00008010.bin```) from which to perform a propagation. GPU ID (e.g. ```0```) is also passed in order to execute the code on a desired gpu. Config file (e.g. ```./configs/config_camvid360.json```) stores the "half_propagation_distance" parameter in order to determine the length of the label propagation.
 
 
 ## Comments on reproducability of [1]
