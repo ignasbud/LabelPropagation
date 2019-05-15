@@ -4,21 +4,18 @@ This project provides the implementation of label propagation used in [1]
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Instructions below explain prerequisites and installation steps needed.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
 ```
-Give examples
+Python 2.7
+Python OpenCV 3.4.1
 ```
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
 
 ```
 Give the example
