@@ -111,7 +111,7 @@ If you use this code please cite the following publications:
 @article{BadrinarayananBC13,
                author    = {Vijay Badrinarayanan and Ignas Budvytis and Roberto Cipolla},
                title     = {Semi-Supervised Video Segmentation Using Tree Structured Graphical Models},
-               journal   = {{IEEE} Trans. Pattern Anal. Mach. Intell.},
+               journal   = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence},
                volume    = {35},
                number    = {11},
                pages     = {2751--2764},
