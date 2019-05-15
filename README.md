@@ -9,7 +9,8 @@ This project provides the implementation of label propagation of Budvytis et. al
   
  <!--[![Class label propagation in CityScapes Dataset](web/cityscapes_class_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)-->
  
-[![Class label propagation in CityScapes Dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif | width=100)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)
+[![Class label propagation in CityScapes Dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)
+ <img src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif" data-canonical-src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif" width="200" height="400" />
  
 [![Instance label propagation in CityScapes Dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)
 
