@@ -1,15 +1,15 @@
 {
-	"project_name":"project_camvid360",
+	"project_name":"camvid360",
         "input_directory_info":{
-                "images_dir":"../data/project_camvid360/images/",
-                "classifier_dir":"../data/project_camvid360/classifier/"
+                "images_dir":"../data/camvid360/images/",
+                "classifier_dir":"../data/camvid360/classifier/"
         },
         "output_directory_info":{
-                "project_dir":"./outputs/project_camvid360/",
-                "binary_images_dir":"./outputs/project_camvid360/images_binary/",
-		"classifier_dir":"./outputs/project_camvid360/classifier/",
-		"mappings_dir":"./outputs/project_camvid360/mappings/",
-		"propagation_output_dir":"./outputs/project_camvid360/output/"
+                "project_dir":"../sample_outputs/camvid360/",
+                "binary_images_dir":"../sample_outputs/camvid360/images_binary/",
+		"classifier_dir":"../sample_outputs/camvid360/classifier/",
+		"mappings_dir":"../sample_outputs/camvid360/mappings/",
+		"propagation_output_dir":"../sample_outputs/camvid360/output/"
         },
         "code_info":{
 		"script_propagate_one_side":"../scripts/propagate.py",
