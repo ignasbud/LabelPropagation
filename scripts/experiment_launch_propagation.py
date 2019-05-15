@@ -26,7 +26,7 @@ class ExperimentLaunchPropagation(Experiment):
 		if not os.path.isdir(self.config_info['output_directory_info']['propagation_output_dir']):
 			os.system('mkdir '+self.config_info['output_directory_info']['propagation_output_dir'])
         def prepareExperimentState(self):
-                os.system('cp '+self.args.config_file_name+' ' +self.config_info["output_directory_info"]["project_dir"]+'config_calculate_mappings.json')
+                os.system('cp '+self.args.config_file_name+' ' +self.config_info["output_directory_info"]["project_dir"]+'config_perform_propagation.json')
 
 	def createLine(self,map_type,canonical_mapping_file_name,canonical_file_name):
         	return  self.config_info["output_directory_info"]["mappings_dir"]+canonical_mapping_file_name+'_'+map_type+'.bin'+ " " + self.config_info["output_directory_info"]["classifier_dir"]+canonical_file_name+".bin"+" " + self.config_info["output_directory_info"]["propagation_output_dir"]+canonical_file_name+"_"+map_type+".bin"+"\n"
