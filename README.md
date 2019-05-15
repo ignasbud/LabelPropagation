@@ -20,15 +20,15 @@ Instructions below explain prerequisites and installation steps needed.
 GPU code compiled with:
 
 ```
-{"gpu":"GeForce GTX 1080", "cuda":"8.0",  "driver":"370.28"},
+- {"gpu":"GeForce GTX 1080", "cuda":"8.0",  "driver":"370.28"}
 ```
 
 GPU code tested with:
 ```
-{"gpu":"Tesla V100-SXM2-16GB", "cuda":"10.1",  "driver":"418.40.04"},
-{"gpu":"GeForce GTX 1080", "cuda":"8.0",  "driver":"370.28"},
-{"gpu":TITAN X (Pascal)","cuda":"10.0","driver":"410.104"},
-{"gpu":TITAN Xp","cuda":"10.0","driver":"410.104"}
+- {"gpu":"Tesla V100-SXM2-16GB", "cuda":"10.1",  "driver":"418.40.04"},
+- {"gpu":"GeForce GTX 1080", "cuda":"8.0",  "driver":"370.28"},
+- {"gpu":TITAN X (Pascal)","cuda":"10.0","driver":"410.104"},
+- {"gpu":TITAN Xp","cuda":"10.0","driver":"410.104"}
 ```
 See [bin/compilation_info.json](bin/compilation_info.json) for more up-to-date detail.
 
