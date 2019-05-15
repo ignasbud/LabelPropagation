@@ -13,7 +13,7 @@ This project provides the implementation of label propagation of Budvytis et. al
 
  <img src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif" data-canonical-src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif" width="100%" />
  
- <img src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif" data-canonical-src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif" width="100%" alt="https://www.youtube.com/watch?v=mF5PTV1S9_Q" />
+ <img src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif" data-canonical-src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif" width="100%" />
  
 <!--[![Instance label propagation in CityScapes Dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)-->
 
@@ -60,7 +60,18 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Running the code
 
-Explain how to run the automated tests for this system
+### Step-1 creating binary images
+
+Script **create_binary_images.sh** takes a folder with png images (e.g. ./data/camvid360/images/) and creates a project folder (e.g. ./sample_outputs/camvid360/), within which it creates raw binary copies of the images read (e.g. ./sample_outputs/camvid360/binary_images/).
+
+```
+CONFIG='./configs/config_camvid360.json'
+python ./scripts/experiment_create_binary_images.py $CONFIG
+```
+
+### Step-2 creating frame to frame mappings
+
+### Step-3 performing label propagation
 
 ## References
 
