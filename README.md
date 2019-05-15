@@ -13,8 +13,10 @@ You can find more related research [here](http://mi.eng.cam.ac.uk/~ib255/).
  
 <!--[![Class label propagation in CityScapes Dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)-->
 
+Propagation of class labels in CityScapes dataset:
  <img src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif" data-canonical-src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif" width="100%" />
  
+ Propagation of object instance labels in CityScapes dataset:
  <img src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif" data-canonical-src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif" width="100%" />
  
 <!--[![Instance label propagation in CityScapes Dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)-->
@@ -65,17 +67,17 @@ End with an example of getting some data out of the system or using it for a lit
 ### Step-1 creating binary images
 
 ```
-python ./scripts/experiment_create_binary_images.py ./configs/config_camvid360.json
+python ../scripts/experiment_create_binary_images.py ../configs/config_camvid360.json
 ```
-Script executed by **create_binary_images.sh** takes a folder with png images (e.g. ./data/camvid360/images/) and creates a project folder (e.g. ```./sample_outputs/camvid360/```), within which it creates raw binary copies of the images read (e.g. ```./sample_outputs/camvid360/binary_images/```). All data directory and algorithm information is stored in config file (e.g. ```./configs/config_camvid360.json```)
+Script executed by **./commands/create_binary_images.sh** takes a folder with png images (e.g. ```./data/camvid360/images/```) and creates a project folder (e.g. ```./sample_outputs/camvid360/```), within which it creates raw binary copies of the images read (e.g. ```./sample_outputs/camvid360/images_binary/```). All data directory and algorithm information is stored in config file (e.g. ```./configs/config_camvid360.json```)
 
 
 ### Step-2 creating frame to frame mappings
 
 ```
-python ./scripts/experiment_calculate_mappings.py ./configs/config_camvid360.json 0
+python ../scripts/experiment_calculate_mappings.py ../configs/config_camvid360.json 0
 ```
-Script executed by **calculate_mappings.sh** takes a folder with binary images (e.g. ```./sample_outputs/camvid360/```) and calculate forward ("O") and backward ("OR") mappings between neighbouring images. The mappings are stored in a special project folder (e.g. ```./sample_outputs/camvid360/mappings/```). GPU ID (e.g. ```0```) is also passed in order to execute the code on a desired gpu.
+Script executed by **./commands/calculate_mappings.sh** takes a folder with binary images (e.g. ```./sample_outputs/camvid360/```) and calculate forward ("O") and backward ("OR") mappings between neighbouring images. The mappings are stored in a special project folder (e.g. ```./sample_outputs/camvid360/mappings/```). GPU ID (e.g. ```0```) is also passed in order to execute the code on a desired gpu.
 
 
 ### Step-3 performing label propagation
@@ -84,7 +86,7 @@ Script executed by **calculate_mappings.sh** takes a folder with binary images (
 python ./scripts/experiment_launch_propagation.py ./configs/config_camvid360.json 0 ./sample_outputs/camvid360/images_binary/R0010094_20170622125256_er_f_00008010.bin
 ```
 
-Script executed by **perform_propagation.sh** takes a seed image name (e.g. ```./sample_outputs/camvid360/images_binary/R0010094_20170622125256_er_f_00008010.bin```) from which to perform a propagation. GPU ID (e.g. ```0```) is also passed in order to execute the code on a desired gpu. Config file (e.g. ```./configs/config_camvid360.json```) stores the ```propagation_half_distance``` (e.g. ```15```) parameter in order to determine the length of the label propagation. The outputs are stored in a dedicated folder (e.g. ```./sample_outputs/camvid360/outputs/```)
+Script executed by **./commands/perform_propagation.sh** takes a seed image name (e.g. ```./sample_outputs/camvid360/images_binary/R0010094_20170622125256_er_f_00008010.bin```) from which to perform a propagation. GPU ID (e.g. ```0```) is also passed in order to execute the code on a desired gpu. Config file (e.g. ```./configs/config_camvid360.json```) stores the ```propagation_half_distance``` (e.g. ```15```) parameter in order to determine the length of the label propagation. The outputs are stored in a dedicated folder (e.g. ```./sample_outputs/camvid360/outputs/```)
 
 ## GPU code
 
@@ -98,6 +100,7 @@ File names (e.g. ```bin/mappings/mappings_v40_GROUP_01_WH_1024x1024_wind_255x255
 - compilation type/group (e.g. ```GROUP_01```)
 - maximum image dimensions for width and height (e.g. ```WH_1024x1024```)
 - maximum sliding window image dimensions centered around a pixel of interest for width and height (e.g. ```wind_255x255```)
+- half patch size (e.g. ```HP_3```)
 
 ### Propagating labels
 
