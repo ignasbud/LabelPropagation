@@ -5,23 +5,13 @@ This project provides the implementation of label propagation of Budvytis et. al
 [paper](http://mi.eng.cam.ac.uk/~cipolla/publications/inproceedings/2017-ICCV-label-propagation.pdf)
 
 You can find more related research [here](http://mi.eng.cam.ac.uk/~ib255/).
-<!--- [supplementary]()--->
-
- <!---[![Label propagation in CityScapes dataset](web/cityscapes_class_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q")--->
-  
- <!--[![Class label propagation in CityScapes Dataset](web/cityscapes_class_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)-->
- 
-<!--[![Class label propagation in CityScapes Dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)-->
 
 **Propagation of class labels in CityScapes dataset:**
  <img src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif" data-canonical-src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_class_propagation_15_20.gif" width="100%" />
  
 **Propagation of object instance labels in CityScapes dataset:**
  <img src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif" data-canonical-src="http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif" width="100%" />
- 
-<!--[![Instance label propagation in CityScapes Dataset](http://mi.eng.cam.ac.uk/~ib255/files/external/cityscapes_instance_propagation.gif)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)-->
 
-<!---[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/mF5PTV1S9_Q/0.jpg)](https://www.youtube.com/watch?v=mF5PTV1S9_Q)--->
 
 ## Getting Started
 
@@ -136,7 +126,7 @@ If you use this code please cite the following publications:
 @article{BadrinarayananBC13,
                author    = {Vijay Badrinarayanan and Ignas Budvytis and Roberto Cipolla},
                title     = {Semi-Supervised Video Segmentation Using Tree Structured Graphical Models},
-               journal   = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence},
+               journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
                volume    = {35},
                number    = {11},
                pages     = {2751--2764},
